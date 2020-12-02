@@ -24,4 +24,3 @@ class Profile(models.Model):
     site1 = models.CharField(max_length=20 , blank=True)
     site3 = models.CharField(max_length=20 , blank=True)
     site4 = models.CharField(max_length=20 , blank=True)
-    site5 = models.CharField(max_length=20 , blank=True)
