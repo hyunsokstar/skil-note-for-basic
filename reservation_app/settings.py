@@ -11,7 +11,7 @@ SECRET_KEY = 'qki)d54cmpt_v7b5m07qh$d#o3j6#pm3gi=po&)b2a59$e859x'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 # ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ['108.61.163.103', '127.0.0.1', 'www.skilnote-for-flutter.co.kr','skilnote-for-flutter.co.kr','127.0.0.1']
+ALLOWED_HOSTS = ['108.61.163.103', '127.0.0.1', 'www.skilnote-for-flutter.co.kr','skilnote-for-flutter.co.kr']
 
 # Application definition
 INSTALLED_APPS = [
@@ -120,21 +120,14 @@ LANGUAGE_CODE = 'en-us'
 
 # TIME_ZONE = 'UTC'
 TIME_ZONE = 'Asia/Seoul'
-
 USE_I18N = True
-
 USE_L10N = True
-
 USE_TZ = True
 
 # django all auth
 AUTHENTICATION_BACKENDS = (
-
-    # Needed to login by username in Django admin, regardless of `allauth`
     'django.contrib.auth.backends.ModelBackend',
-# `allauth` specific authentication methods, such as login by e-mail
     'allauth.account.auth_backends.AuthenticationBackend',
-
 )
 
 SITE_ID = 1
@@ -165,6 +158,9 @@ DJANGO_NOTIFICATIONS_CONFIG = {
 # BOOTSTRAP4 = {
 #     'include_jquery': True,
 # }
+
+X_FRAME_OPTIONS = 'ALLOWALL'
+XS_SHARING_ALLOWED_METHODS = ['POST', 'GET', 'OPTIONS', 'PUT', 'DELETE']
 
 
 INTERNAL_IPS = [
